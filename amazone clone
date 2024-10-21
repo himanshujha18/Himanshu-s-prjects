@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    
+        <div class="navbar ">
+            <div class="nav-logo border"></div>
+            <div class="loc border">
+                <p class="loc-1">Deliver to</p>
+                <div class="loc-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                 <p class="loc-2">India</p>
+                 </div>
+            </div>
+            <div class="search border">
+                <select>
+                <option>All</option>
+                </select>
+                <input placeholder="Search amazon" class="search-box border">
+                <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+               </div>
+            </div>
+            
+            <div class="log-in border">
+                <div class="log-1 ">
+                    <p class="sign-in">Hello,sign in</p></div>
+                    <div class="log-2">
+                    <p class="list"> Account & Lists</p>
+                </div>
+            </div>
+            <div class="orders border">
+                    <p class="return">Returns</p>
+                    <p class="order">& Orders</p>
+                </div>
+                <div class="cart border">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p class="cart-1">Cart</p>
+                </div>
+                
+                
+        </div>
+    
+    <nav>
+    <div class="nav-2">
+        <div class="bar border">
+        <i class="fa-solid fa-bars"></i>
+        <p class="all">All</p>
+    </div>
+    <div class="deals border">
+        <p>Today's Deals</p>
+    </div>
+    <div class="service border">
+        <p>Customer Service</p>
+    </div>
+    <div class="registry border">
+        <p>Registry</p>
+    </div>
+    <div class="gift border">
+        <p>Gift Cards</p>
+    </div>
+    <div class="sell border">
+        <p>Sell</p>
+    </div>
+</nav>
+</header>
+</div>
+      <div class="background"></div>
+<div class="background-color">
+    <div class="coloumn1">
+ <div class="items">
+        <p class="heading">Gaming accessories</p>
+      <div class="line-1">
+      <div class="headset"> </div>
+            <div class="keyboard"></div>
+        </div>
+        <div class="name-1">
+        <p class="name">Headsets</p> 
+        <p class="key">Keyboard</p>
+    </div>
+    <div class="line-2">
+        <div class="mouse"></div>
+        <div class="chair"></div>
+    </div>
+    <div class="name-2">
+        <p class="mou">Mouse</p>
+        <p class="chai">Chair</p>
+    </div>
+ </div>
+<div class="head-2">
+    <p class="deals">Deals in PCs</p>
+    <div class="cpu"></div>
+</div>
+<div class="head-3">
+    <p class="shop">Shop deals in Fashion</p>
+<div class="shop-1">
+    <div class="jeans"></div>
+    <div class="top"></div>
+</div>
+<div class="shop-n">
+    <p class="n-1">jeans under $50</p>
+    <p class="n-2">tops under $25</p>
+</div>
+     <div class="shop-2">
+        <div class="dress"></div>
+        <div class="shoes"></div>
+     </div>
+    <div class="shop-n2">
+        <p class="n-1">dresses under $30</p>
+        <p class="n-3">shoes under $50</p>
+    </div> 
+</div>
+         <div class="head-4">
+                <div class="refresh">
+                    <p class="refresh">Refresh your space</p>
+                </div>
+            <div class="ref-1">
+                <div class="dining"></div>
+                <div class="home"></div>
+            </div>
+            <div class="ref-1n">
+                <p class="din">Dining</p>
+                <p class="hom">Home</p>
+            </div>
+            <div class="ref-2">
+                <div class="kitchen"></div>
+                <div class="health"></div>
+            </div>
+            <div class="ref-2n">
+                <p class="kit">Kitchen</p>
+                <p class="healthbeauty">Health & Beauty</p>
+            </div>
+        </div>
+        <div class="head-5">
+            <div class="gadget">
+                <p class="gadget">Amazon gadget's store</p>
+            </div>
+            <div class="gad-1"></div>
+                <p class="smartphones">Smartphone's</p>
+                <div class="gad-2">
+                    <div class="laptop"></div>
+                    <div class="tablet"></div>
+                    <div class="tvs"></div>
+                </div>
+            <div class="gad-2n">
+                <p class="laptops">Laptop's</p>
+                <p class="tablets">Tablet's</p>
+                <p class="tv">Tv's</p>
+            </div>
+        </div>
+    </div>
+     <div class="seller">
+            <p class="sellers">Best Sellers in Cell Phones & Accessories</p>
+        <div class="phone">
+            <div class="phone1"></div>
+            <div class="phone2"></div>
+            <div class="phone3"></div>
+            <div class="phone4"></div>
+            <div class="phone5"></div>
+            <div class="phone6"></div>
+            <div class="charger"></div>
+            <div class="charger2"></div>
+            <div class="stand"></div>
+            <div class="cstand"></div>
+            <div class="phone7"></div>
+         </div>
+    </div>
+    
+    <footer>
+        <div class="foot">
+             <p class="recommend">See personalized recommendations</p>
+             <button>Sign in</button>
+             <p class="new">New customer? <a href="">Sign here</a></p>
+        </div>
+    </footer>
+    
+    <div class="footer">
+        <button class="backtotop">Back to top</button>
+    <div class="fotter1">
+        <p class="gettoknow">
+            Get to Know Us
+            <br>
+             <a href="">About Us</a>
+             <br>
+                <a href="">Careers</a>
+                <br>
+            <a href="">Press Releases</a>
+                <br>
+            <a href="">Amazon Science</a>
+            
+            </p>
+            <p class="connect">
+                
+                 Connect with Us
+                 <br>
+                 <a href=""> Facebook</a>
+                   <br>
+                   <a href=""> Twitter</a>
+                       <br>
+                       <a href="">Instagram</a>
+                          </p>
+            <p class="money">
+                Make Money with Us <br>
+                
+                <a href=""> Sell on Amazon <br>
+                    <a href=""> Sell under Amazon Accelerator</a><br>
+                        <a href="">Protect and Build Your Brand</a><br>
+                            <a href="">Amazon Global Selling</a><br>
+                                <a href="">Become an Affiliate</a><br>
+                                    <a href="">Fulfilment by Amazon</a><br>
+                                        <a href="">Advertise Your Products</a><br>
+                                            <a href=""> Amazon Pay on Merchants</a>
+                
+                
+            </p>
+            <p class="help">
+                Let Us Help You <br>
+                
+                <a href="">COVID-19 and Amazon</a><br>
+                    <a href=""> Your Account</a><br>
+                        <a href=""> Returns Centre</a><br>
+                            <a href="">Recalls and Product Safety Alerts</a><br>
+                                <a href="">100% Purchase Protection</a><br>
+                    <a href="">Amazon App Download</a><br>
+                    <a href="">Help</a><br>
+                </p>
+            </div>
+        </div>
+                <div class="end">
+                    <div class="logo2"></div>
+                    <p class="finish">
+                        © 1996-2024, Amazon.com, Inc. or its affiliates
+                    </p>
+                </div>
+            
+    
+</body>
+</html>
