@@ -5,7 +5,738 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon clone</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <style>
+*{
+    margin: 0;
+    border: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2px solid rgb(240, 158, 7);
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    display: flexbox;
+    align-items: center;
+
+}
+@media screen and(min-width: 767px){
+    .nav{
+        flex-direction: column;
+    }
+}
+.nav-logo{
+    background-image: url(Colors-Amazon-Logo.jpg);
+    background-size: cover;
+     height: 100px;
+    width: 100px;
+    align-items: center;
+
+}
+.loc-1{
+    color: #cccccc;
+    font-size: 1.75rem;
+    margin-left: 50px;
+
+}
+.loc-2{
+    color: white;
+    font-size: 2rem;
+    margin-left: 3px;
+}
+.loc-icon{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 25px;
+
+}
+.search{
+    display: flex;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+select{
+    color: black;
+    font-size: 35px;
+    margin-left: 25px;
+
+}
+.search-icon{
+    text-align: center;
+    background-color:rgba(255, 208, 0, 0.904);
+    height: 49px;
+    width: 35px;
+    border-radius:0px;
+    font-size: 25px;
+    
+}
+.search-box{
+    height: 44.5px;
+    width: 1200px;
+    color: black;
+}
+
+.log-in{
+    margin-left: 50px;
+
+}
+.log-1{
+    font-size: 10px;
+    font-size: 1.75rem;
+
+}
+.log-2{
+    font-size: 15px;
+    font-size: 2rem;
+
+    display:flex
+    
+}
+.orders{
+    margin-left: 50px;
+
+}
+.return{
+    font-size: 1.75rem;
+
+}
+.order{
+    font-size: 2rem;
+
+}
+.cart{
+    margin-left: 50px;
+    display: flex;
+    font-size: 2rem;
+}
+.nav-2{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(12, 7, 56, 0.89);
+    align-items: center;
+    display: flex;
+}
+.bar{
+    margin-left: 10px;
+    display: flex;
+    font-size: 1.5rem;
+
+}
+.all{
+    margin-left: 2px;
+    font-size: 1.5rem;
+
+}
+.deals{
+    margin-left: 15px;
+    font-size: 1.5rem;
+    
+
+}
+.service{
+    margin-left: 15px;
+    font-size: 1.5rem;
+    
+
+
+}
+.registry{
+    margin-left: 15px;
+    font-size: 1.5rem;
+    
+
+
+}
+.gift{
+    margin-left: 15px;
+    font-size: 1.5rem;
+    
+
+
+}
+.sell{
+    margin-left: 15px;
+    font-size: 1.5rem;
+    
+
+}
+.background{
+    background-image: url(background.jpg);
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+}
+/** items **/
+.background-color{
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(230, 227, 227);
+}
+.items{
+    margin-left: 20px;
+    border: 5px solid white;
+    height: 400px;
+    width: 400px;
+    background-color:white;  
+}
+.items:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.heading{
+    color: black;
+    font-size: 2rem;
+}
+.line-1{
+    display: flex;
+}
+.headset{
+    margin-top: 15px;
+    margin-left: 25px;
+    background-image: url(headsets.jpg);
+    height: 116px;
+    width: 146px;
+}
+.name{
+    margin-left: 10px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.keyboard{
+    background-image: url(keyboards.jpg);
+    height: 116px;
+    width: 146px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.key{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 160px;
+}
+.name-1{
+    display: flex;
+}
+.line-2{
+    display: flex;
+}
+.mouse{
+    background-image: url(mouse.jpg);
+    height: 116px;
+    width: 146px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.chair{
+    background-image: url(chairs.jpg);
+    height: 116px;
+    width: 146px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+.name-2{
+    display: flex;
+   
+}
+.mou{
+    margin-left: 10px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.chai{
+    margin-left: 10px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 200px;
+}
+.head-2{
+    margin-left: 500px;
+    align-items: center;
+    border: 5px solid white;
+    height: 400px;
+    width: 400px;
+    background-color:white;
+    position: absolute;
+    top: 600px;
+    
+}
+
+.deals{
+    color: black;
+    font-size: 2rem;
+}
+.head-2:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.cpu{
+    background-image: url(cpu.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 350px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.head-3{
+    margin-left: 980px;
+    align-items: center;
+    border: 5px solid white;
+    height: 400px;
+    width: 400px;
+    background-color:white;
+    position: absolute;
+    top: 600px;
+}
+.head-3:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.shop{
+    color: black;
+    font-size: 2rem;
+}
+.shop-1{
+    display: flex;
+}
+.jeans{
+background-image: url(jeans.jpg);
+margin-top: 25px;
+height: 118px;
+width: 146px;
+margin-left: 20px;
+}
+.top{
+    background-image: url(tops.jpg);
+    margin-top: 25px;
+    height: 118px;
+    width: 146px;
+    margin-left: 65px;
+}
+.shop-n{
+    display: flex;
+}
+.n-1{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 28px;
+}
+.n-2{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 90px;
+}
+.shop-2{
+    display: flex;
+}
+.dress{
+    background-image: url(dress.jpg);
+    height: 118px;
+     width: 146px;
+     margin-left: 20px;
+     margin-top: 15px;
+}
+.shoes{
+    background-image:url(shops.jpg);
+    margin-top: 15px;
+    height: 118px;
+    width: 146px;
+    margin-left: 65px;
+}
+.shop-n2{
+    display: flex;
+}
+.n-3{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 65px;
+
+}
+.head-4{
+    margin-left: 1465px;
+    align-items: center;
+    border: 5px solid white;
+    height: 400px;
+    width: 400px;
+    background-color:white;
+    position: absolute;
+    top: 600px;
+}
+.head-4:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.refresh{
+    color: black;
+    font-size: 2rem;
+}
+.ref-1{
+    display: flex;
+}
+.dining{
+    background-image: url(dining.jpg);
+    background-size: cover;
+    margin-top: 25px;
+    height: 118px;
+    width: 146px;
+    margin-left: 15px;
+
+}
+.home{
+    background-image: url(home.jpg);
+    background-size: cover;
+    margin-top: 25px;
+    height: 118px;
+    width: 146px;
+    margin-left: 70px;
+
+}
+.ref-1n{
+    display: flex;
+}
+.din{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 60px;
+}
+.hom{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 170px;
+}
+.ref-2{
+    display: flex;
+}
+.kitchen{
+    background-image: url(kitchen.jpg);
+    background-size: cover;
+    margin-top: 25px;
+    height: 118px;
+    width: 146px;
+    margin-left: 15px;
+
+}
+.health{
+    background-image: url(health.jpg);
+    background-size: cover;
+    margin-top: 25px;
+    height: 118px;
+    width: 146px;
+    margin-left: 70px;
+}
+.ref-2n{
+    display: flex;
+}
+.kit{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 60px;
+}
+.healthbeauty{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 125px;
+}
+.head-5{
+    margin-left: 1945px;
+    align-items: center;
+    border: 5px solid white;
+    height: 400px;
+    width: 400px;
+    background-color:white;
+    position: absolute;
+    top: 600px;
+}
+.head-5:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.gadget{
+    color: black;
+    font-size: 2rem;
+}
+.gad-1{
+    background-image: url(smartphones.jpg);
+    background-size: cover;
+    width: 370px;
+    height: 150px;
+    margin-left: 15px;
+}
+.smartphones{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 150px;
+}
+.gad-2{
+    display: flex;
+}
+.tablet{
+    background-image: url(tablets.jpg);
+    background-size: cover;
+    margin-top: 25px;
+    height: 118px;
+    width: 120px;
+    margin-left: 10px;
+
+}
+.laptop{
+    background-image: url(laptops.jpg);
+    background-size: cover;
+    margin-top: 25px;
+    height: 118px;
+    width: 120px;
+    margin-left: 15px;
+}
+.tvs{
+    background-image: url(tv.jpg);
+    background-size: cover;
+    margin-top: 25px;
+    height: 118px;
+    width: 110px;
+    margin-left: 10px;
+}
+.gad-2n{
+    display: flex;
+}
+.laptops{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 40px;
+}
+.tablets{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 80px;
+}
+.tv{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 70px;
+}
+.seller{
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 5px solid white;
+    height: 350px;
+    width: 100%;
+    background-color:white;
+    
+    
+}
+.sellers{
+    color: black;
+    font-size: 2rem;
+}
+.phone{
+    display: flex;
+}
+.phone1{
+         background-image: url(phone1.jpg);
+         height: 200px;
+         width: 185px;
+         margin-left: 10px;
+         margin-top: 30px;
+}
+.phone1:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.phone2{
+        background-image: url(phone2.jpg);
+        height: 200px;
+         width: 200px;
+         margin-top: 30px;
+         margin-left: 30px;
+
+}
+.phone2:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.phone3{
+    background-image: url(phone3.jpg);
+    height: 200px;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.phone3:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.phone4{
+    background-image: url(phone4.jpg);
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.phone4:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.phone5{
+    background-image: url(phone5.jpg);
+    height: 200px;
+    width: 188px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.phone5:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.phone6{
+    background-image: url(phone6.jpg);
+    height: 200px;
+    width: 178px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.phone6:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.charger{
+    background-image: url(charger.jpg);
+    height: 200px;
+    width: 178px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.charger:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.charger2{
+    background-image: url(charger2.jpg);
+    height: 200px;
+    width: 182px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.charger2:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.stand{
+    background-image: url(stand.jpg);
+    height: 200px;
+    width: 178px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.stand:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.cstand{
+    background-image: url(cstand.jpg);
+    height: 200px;
+    width: 206px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.cstand:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.phone7{
+    background-image: url(phone7.jpg);
+    height: 200px;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.phone7:hover{
+    border: 5px outset rgb(245, 150, 9);
+}
+.button{
+    height: 100px;
+    width:85px;
+    margin-top: 75px;
+}
+.foot{
+    margin-top: 50px;
+    text-align: center;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 200px;
+
+}
+.recommend{
+    color: black;
+    position: relative;
+    top: 70px;
+}
+button{
+    color: black;
+    font-size: 25px;
+    background-color: rgb(255, 196, 0);
+    width: 300px;
+    margin-top: 70px;
+}
+button:hover{
+    background-color: rgba(226, 5, 5, 0.651);
+}
+.new{
+    color: black;
+    margin-top: 10px;
+}
+a{
+    color: black;
+}
+.footer{
+    height: 500px;
+    width: 100%;
+    background-color: rgba(0, 0, 128, 0.459);
+}
+.backtotop{
+    text-align: center;
+    background-color: rgba(3, 3, 163, 0.356);
+    margin-top: 0px;
+    width: 100%;
+    height: 80px;
+
+}
+.forget1{
+    display: flex;
+}
+.gettoknow{
+    margin-left: 600px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+.connect{
+    margin-top: -195px;
+    margin-left: 900px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+.money{
+    margin-top: -155px;
+    margin-left: 1200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+.help{
+    margin-top: -350px;
+    margin-left: 1600px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+.end{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 150px;
+    width: 100%;
+}
+.logo2{
+    margin-left: 45%;
+    background-image: url(Colors-Amazon-Logo.jpg);
+    background-size: cover;
+    height: 100px;
+    width:150px;
+}
+.finish{
+    font-size: 30px;
+}
+</style>
 </head>
 <body>
     <header>
